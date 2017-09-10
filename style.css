@@ -1,0 +1,746 @@
+/*	
+	Sample
+	https://github.com/napalias/sample
+	by Napalias
+	http://napalias.com
+	License: http://opensource.org/licenses/mit-license.php	
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background: #ffffff;
+  font: 12px/1 arial, helvetica, sans-serif;
+  font-family: exo;
+  color: #000000;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+a {
+  color: #0000ff;
+}
+a:hover {
+  color: #0000ff;
+  text-decoration: none;
+}
+strong,
+b,
+.b {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+em,
+.i {
+  font-style: italic;
+}
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.u {
+  text-decoration: underline;
+}
+button,
+.btn,
+.button {
+  cursor: pointer;
+}
+.min-width {
+  min-width: 960px;
+}
+.section {
+  position: relative;
+  z-index: 2;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+input,
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.textFull {
+  width: 100%;
+}
+.clearfix {
+  clear: both;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+}
+body {
+  max-width: 1440px;
+  margin-top: 40px;
+}
+body .navbar {
+  background-color: #333;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  height: 45px;
+  max-width: 1440px;
+  /* Full width */
+  z-index: 10;
+  text-align: center;
+}
+body .navbar .active {
+  color: #333;
+  background-color: white;
+}
+body .navbar a {
+  color: white;
+  font-size: 16px;
+  position: relative;
+  top: 15px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 30px;
+}
+@media only screen and (max-width: 760px) {
+  body .navbar a {
+    margin: 0 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body .navbar a {
+    margin: 0 6px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 395px) {
+  body .navbar a {
+    margin: 0 2px;
+    font-size: 11px;
+  }
+}
+body .navbar a:hover {
+  color: #333;
+  background-color: white;
+}
+body header {
+  background-image: url("images/header-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 195px 0;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+body header video {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  margin: 0 auto;
+  height: 805px;
+  z-index: -10;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}
+body header h1 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: lighter;
+  margin: 0 3px;
+  line-height: 120%;
+}
+@media only screen and (max-width: 685px) {
+  body header h1 {
+    font-size: 42px;
+  }
+}
+@media only screen and (max-width: 485px) {
+  body header h1 {
+    font-size: 25px;
+  }
+}
+body header .playbutton {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #8286a4;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+body header .playbutton:hover {
+  background-color: #7175b3;
+}
+body header .playbutton img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 21px;
+  padding-left: 1px;
+}
+body header .trynow {
+  text-align: center;
+  margin-top: 57px;
+}
+body header .trynow .trybutton {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  color: white;
+  background-color: #ff6d6d;
+  padding: 14px 52px;
+  border-radius: 5px;
+}
+body header .trynow .trybutton:hover {
+  background-color: #ff2d2d;
+}
+body header .trynow p {
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #767779;
+  margin-top: 35px;
+}
+body header .trynow p:hover {
+  color: red;
+}
+body #intro {
+  position: relative;
+  z-index: 5;
+}
+body #intro .description {
+  float: left;
+  width: 36%;
+  position: relative;
+  left: 150px;
+  top: 150px;
+}
+@media only screen and (max-width: 1170px) {
+  body #intro .description {
+    top: 75px;
+    left: 50px;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  body #intro .description {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+}
+body #intro .description span {
+  color: #fb8686;
+}
+body #intro .description p {
+  margin-top: 60px;
+  font-size: 16px;
+  color: #717171;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+}
+@media only screen and (max-width: 880px) {
+  body #intro .description p {
+    margin-top: 40px;
+  }
+}
+body #intro img {
+  float: right;
+  position: relative;
+  right: 1px;
+}
+@media only screen and (max-width: 1070px) {
+  body #intro img {
+    display: none;
+  }
+}
+body #features {
+  position: relative;
+  padding-top: 143px;
+  padding-bottom: 120px;
+  text-align: center;
+  z-index: 1;
+  background-color: #f6f5f3;
+  background-image: url("images/s3background.png");
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1170px) {
+  body #features {
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 880px) {
+  body #features {
+    padding-bottom: 70px;
+    background-image: none;
+  }
+}
+body #features .earphones {
+  position: absolute;
+  top: -7px;
+  z-index: 2;
+  right: 165px;
+}
+@media only screen and (max-width: 1170px) {
+  body #features .earphones {
+    right: 70px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  body #features .earphones {
+    display: none;
+  }
+}
+body #features .left,
+body #features .mid,
+body #features .right {
+  display: inline-block;
+  width: 25%;
+  margin: 60px 30px;
+}
+@media only screen and (max-width: 880px) {
+  body #features .left,
+  body #features .mid,
+  body #features .right {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+}
+body #features .left img,
+body #features .mid img,
+body #features .right img {
+  margin-bottom: 25px;
+}
+body #features .left h3,
+body #features .mid h3,
+body #features .right h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+body #features .left p,
+body #features .mid p,
+body #features .right p {
+  font-size: 16px;
+  color: #717171;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+}
+body #clients {
+  text-align: center;
+  padding-bottom: 250px;
+  background-image: url("images/clientsbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body #clients .logos {
+  position: relative;
+  top: 150px;
+}
+@media only screen and (max-width: 1070px) {
+  body #clients .logos {
+    max-width: 770px;
+    margin: 0 auto;
+    top: 100px;
+  }
+}
+body #clients .logos img {
+  margin: 0 35px;
+}
+@media only screen and (max-width: 1070px) {
+  body #clients .logos img {
+    margin: 30px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  body #clients .logos img {
+    margin: 10px;
+  }
+}
+body #clients .left,
+body #clients .mid,
+body #clients .right {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  margin: 0 30px 60px 30px;
+  top: 110px;
+}
+@media only screen and (max-width: 880px) {
+  body #clients .left,
+  body #clients .mid,
+  body #clients .right {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    position: relative;
+    top: 90px;
+  }
+}
+body #clients .left h3,
+body #clients .mid h3,
+body #clients .right h3 {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 5px;
+}
+body #clients .left img,
+body #clients .mid img,
+body #clients .right img {
+  margin-bottom: 20px;
+}
+body #clients .left p,
+body #clients .mid p,
+body #clients .right p {
+  font-size: 16px;
+  font-style: italic;
+  color: #8c8d8f;
+  line-spacing: 48px;
+  letter-spacing: 0.04em;
+}
+body #trysection {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  background-color: #323969;
+}
+body #trysection .h3text {
+  color: white;
+}
+body #trysection form {
+  margin-top: 70px;
+}
+body #trysection form input {
+  padding: 10px 25px;
+  margin: 14px;
+  background-color: #464c77;
+  border: 1px solid #999cb4;
+  color: white;
+}
+body #trysection form input:hover {
+  background-color: #575d88;
+}
+@media only screen and (max-width: 1070px) {
+  body #trysection form input {
+    display: block;
+    margin: 14px auto;
+  }
+}
+body #trysection form .submitbutton {
+  background-color: #ff6d6d;
+  width: 260px;
+}
+body #trysection form .submitbutton:hover {
+  background-color: #ff2d2d;
+}
+@media only screen and (max-width: 1070px) {
+  body #trysection form .submitbutton {
+    margin-top: 100px;
+  }
+}
+body #trysection p {
+  margin-top: 44px;
+  font-size: 16px;
+  color: #8c8d8f;
+}
+body #trysection p a {
+  text-decoration: underline;
+  color: #8c8d8f;
+}
+body #trysection p a:hover {
+  color: white;
+}
+body #trysection .trial {
+  display: inline;
+  position: relative;
+  top: 70px;
+  left: 360px;
+}
+@media only screen and (max-width: 1070px) {
+  body #trysection .trial {
+    text-align: center;
+    left: 0;
+    top: 300px;
+  }
+}
+body #footer {
+  padding-bottom: 60px;
+}
+@media only screen and (max-width: 1460px) {
+  body #footer {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}
+body #footer .info {
+  display: inline-block;
+  width: 250px;
+  margin-top: 48px;
+  position: relative;
+  left: 199px;
+}
+@media only screen and (max-width: 1460px) {
+  body #footer .info {
+    left: 30px;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  body #footer .info {
+    display: block;
+    left: 0;
+    margin: 30px auto;
+    text-align: center;
+  }
+}
+body #footer .info p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #8c8d8f;
+  letter-spacing: 0.04em;
+  line-height: 2em;
+}
+body #footer .btm-links {
+  display: inline-block;
+  position: relative;
+  left: 199px;
+  bottom: 25px;
+}
+@media only screen and (max-width: 1460px) {
+  body #footer .btm-links {
+    left: 30px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  body #footer .btm-links {
+    width: 100%;
+    margin: 30px auto;
+    display: block;
+    position: initial;
+    text-align: center;
+  }
+}
+body #footer .btm-links ul {
+  display: inline-block;
+  margin: 0 70px;
+}
+@media only screen and (max-width: 1170px) {
+  body #footer .btm-links ul {
+    margin: 0 35px;
+  }
+}
+body #footer .btm-links ul h3 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+body #footer .btm-links ul li {
+  font-size: 14px;
+  margin: 0 0 15px 0;
+}
+body #footer .btm-links ul li a {
+  color: #8c8d8f;
+  padding: 5px;
+}
+body #footer .btm-links ul li a:hover {
+  background: #8c8d8f;
+  color: white;
+  border-radius: 5px;
+}
+body #footer .newsletter {
+  display: inline-block;
+  position: relative;
+  bottom: 8px;
+  left: 199px;
+}
+@media only screen and (max-width: 1460px) {
+  body #footer .newsletter {
+    left: 30px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  body #footer .newsletter {
+    width: 100%;
+    display: block;
+    position: initial;
+    margin: 20px 0;
+    text-align: center;
+  }
+}
+body #footer .newsletter h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+body #footer .newsletter input {
+  padding: 15px;
+  border: 1px solid lightgrey;
+}
+body #footer .newsletter button {
+  position: relative;
+  right: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: #ff6d6d;
+}
+body #footer .newsletter button:hover {
+  background-color: #ff2d2d;
+}
+body #footer .newsletter button i {
+  font-size: 1.5em;
+  padding: 15px;
+}
+body #footer .newsletter .icons img {
+  margin: 5px;
+}
+body #footer .footerbg {
+  position: absolute;
+  right: 0;
+}
+@media only screen and (max-width: 1460px) {
+  body #footer .footerbg {
+    display: none;
+  }
+}
+body .redtext {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  color: #fb8686;
+  margin-bottom: 20px;
+}
+body .h3text {
+  font-size: 40px;
+}
+@media only screen and (max-width: 600px) {
+  body .h3text {
+    font-size: 24px;
+  }
+}

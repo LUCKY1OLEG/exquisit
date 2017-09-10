@@ -1,0 +1,17 @@
+.button(@w, @h){
+	display: block;
+	width: @w*1px;
+	height: @w*1px;	
+}
+
+.buttonImage(@w, @h, @img, @bcolor : none){
+	display: block;
+	width: @w*1px;
+	height: @h*1px;
+	text-indent: -9999px;
+	font-size: 0px;
+	
+	&:hover{
+		background-position: 0 @h*-1px;
+	}
+}

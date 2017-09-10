@@ -1,0 +1,170 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Corporate Landing Page</title> 
+    <meta name="publisher" content="" /> 
+    <meta name="description" content="" /> 
+    <meta name="keywords" content="" /> 
+    <meta name="robots" content="all" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://use.fontawesome.com/86e51d0155.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+  </head> 
+
+  <body> 
+    <div class="navbar">
+      <a href="#header" class="active links">Home</a>
+      <a href="#intro" class="links">Intro</a>
+      <a href="#features" class="links"">Features</a>
+      <a href="#clients" class="links">Clients</a>
+      <a href="#trysection" class="links">Links</a>
+
+    </div>
+    <header class="bg-header" id="header">
+      <video class="myVideo" playsinline muted loop>
+        <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+        <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+      </video>
+    </div>
+      <h1>There is no other<br>platforms for you as like</h1>
+      <a href="#" class="playbutton"><img class="playicon" src="images/play.png"></a>
+      <div class="trynow">
+        <a href="#" class="trybutton">TRY NOW</a>
+        <p>* No need to add cards details</p>
+    </header>
+    <div id="intro">
+      <div class="description">
+        <h4 class="redtext">NEW DESIGN</h4>
+        <h3 class="h3text">There is no other platforms<br>for you as like <span>....</span></h3>
+        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venena ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco semper<br><br><br>
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur occaecat cupidatat non
+        proident elta libero, a phaetra augue.</p>
+      </div>
+      <img src="images/rectangle.png">
+      <div class="clearfix"></div>
+    </div>
+    <div id="features">
+        <h4 class="redtext">NEW FEATURES</h4>
+        <h3 class="h3text">Some awesone features</h3>
+        <img src="images/earphones.png" class="earphones">
+      <div class="left">
+        <img src="images/lefticon.png">
+        <h3>Some awesone features</h3>
+        <p>Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nulla viae elit libero, a pharetra augue.</p>
+      </div>
+      <div class="mid">
+        <img src="images/midicon.png">
+        <h3>Some awesone features</h3>
+        <p>Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nulla viae elit libero, a pharetra augue.</p>
+      </div>
+      <div class="right">
+        <img src="images/righticon.png">
+        <h3>Some awesone features</h3>
+        <p>Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nulla viae elit libero, a pharetra augue.</p>
+      </div>
+    </div>
+    <div id="clients">
+      <div class="left">
+        <img src="images/clienticon.png">
+        <h3>Jonathon Doe</h3>
+        <h4 class="redtext">Co Founder</h4>
+        <p>Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nulla viae elit libero, a pharetra augue.</p>
+      </div>
+      <div class="mid">
+        <img src="images/clienticon.png">
+        <h3>Jonathon Doe</h3>
+        <h4 class="redtext">Co Founder</h4>
+        <p>Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nulla viae elit libero, a pharetra augue.</p>
+      </div>
+      <div class="right">
+        <img src="images/clienticon.png">
+        <h3>Jonathon Doe</h3>
+        <h4 class="redtext">Co Founder</h4>
+        <p>Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Nulla viae elit libero, a pharetra augue.</p>
+      </div>
+      <div class="logos">
+        <img src="images/logohits.png">
+        <img src="images/logorvlvr.png">
+        <img src="images/logoeat.png">
+        <img src="images/logoigor.png">
+        <img src="images/logosienna.png">
+      </div>
+    </div>
+    <div id="trysection">
+      <h4 class="redtext">NEW FEATURES</h4>
+      <h3 class="h3text">Over 1000 designers are using ...</h3>
+      <div class="trial">
+        <img src="images/arrow.png">
+      </div>
+      <!-- Form's value dissapears on focus -->
+      <form class="trialform">
+        <input type="text" name="name" value="FULL NAME"
+          onblur="if(this.value == '') {this.value = 'FULL NAME';}"
+          onfocus="if(this.value == 'FULL NAME') { this.value = '';}">
+        <input type="email" name="email" value="YOUR EMAIL"
+          onblur="if(this.value == '') {this.value = 'YOUR EMAIL';}" 
+          onfocus="if(this.value == 'YOUR EMAIL') {this.value = ''; }">
+        <input type="password" name="password" value="PASSWORD"
+          onblur="if(this.value == '') {this.value = 'PASSWORD';}" 
+          onfocus="if(this.value == 'PASSWORD') {this.value = '';}">
+        <input type="submit" value="TRY NOW" class="submitbutton">
+      </form>
+      <p>By Signing up you agree to our <a href="#">terms & Services.</a></p>
+    </div>
+	</body>
+  <div id="footer">
+    <div class="info">
+      <img src="images/logo.png">
+      <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.<br>USA & CAN: 1-888-123-4567<br>Adress: 34 Brokel Rd. NY</p>
+    </div>
+    <div class="btm-links">
+      <ul>
+        <h3 class="ulname">Support</h3>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Get Started</a></li>
+        <li><a href="#">Contact US</a></li>
+      </ul>
+      <ul>
+        <h3 class="ulname">About US</h3>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="newsletter">
+      <h3>Get Newsletter</h3>
+      <form class="submitform">
+      <input type="email" name="email" value="EMAIL"
+          onblur="if(this.value == '') {this.value = 'EMAIL';}" 
+          onfocus="if(this.value == 'EMAIL') {this.value = ''; }">
+      <button type="submit" class="plane">
+        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+      </button>
+      </form>
+      <div class="icons">
+        <a href="#">
+          <img src="images/ball.png"></a>
+        <a href="#">
+          <img src="images/fb.png"></a>
+        <a href="#">
+          <img src="images/googleplus.png">
+        </a>
+        <a href="#">
+         <img src="images/twitter.png">
+        </a>
+      </div>
+    </div>
+    <img src="images/footerbg.png" class="footerbg">
+  </div>
+</html>
